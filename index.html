@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+  <!--Title Header-->
+  <div class="container-fluid bg-dark text-warning">
+    <div class="row">
+      <div class="header col text-center">
+        <h1>CrystalCollector!</h1>
+      </div>
+    </div>
+  </div>
+
+    <!--Main Content/Left = Wins, Middle = Description of game, Right = Losses-->
+  <div class="container-fluid bg-info font-weight-bold">
+
+    <div class="row">
+      <!--Left Wins-->
+      <div class="leftWin col-3 bg-light text-dark">Wins:</div>
+        <!--Main Content-->
+        <div class="main col-6">
+          <h3 class="text-center">GAME PLAY</h3>
+            <ol>
+              <li> At the start of each game, you'll be given a random number.</li>
+              <li> There are four crystals. Each time you click on one, you add a specific
+              amount of points to your total score.</li>
+              <li> To win the game, you must match your total score to the random number.</li>
+              <li> If your total score goes above the random number you'll lose the game.</li>
+            </ol>
+        </div>
+      <!--Right Losses-->
+      <div class="rightLose col-3 bg-light text-dark">Losses:</div>
+    </div>
+    
+    <!--Additional Info-->
+    <div class="row">
+      <div class="col notes text-center bg-dark text-light">
+        <p>The value of the crystals will be hidden until & while you click them. It's up to you to figure it
+        out!!!</p>
+        </p>Each time the game restarts, the value of the crystals will change.
+        Again and again and again!!!!<br>
+        <h6>GOOD LUCK!!!</h6>
+      </div>
+    </div>
+
+  </div>
+
+      
+  <!--Crystal container/random & user total numbers-->
+  <div class="container-fluid crystals text-center font-weight-bold">
+    <div class="row">
+      <div class="col-3 bg-dark rounded-circle shadow-lg text-center jumbotron" id="usernum"></div>
+        <div class="col-6">
+          <button id=purple-crystal class="border-0 btn-lg"><img src="assets/images/purple gem.png" width=150px></button>
+          <button id=black-crystal class="border-0 btn-lg"><img src="assets/images/black.png" width=150px></button>
+          <button id=blue-crystal class="border-0 btn-lg"><img src="assets/images/blue gem.png" width=150px></button>
+          <button id=pink-crystal class="border-0 btn-lg"><img src="assets/images/Multicolor_Diamonds_Set_PNG_Clipart.png" width=150px></button>
+        </div>
+      <div class="col-3 bg-info rounded-circle shadow-lg text-center jumbotron" id="comnum"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
